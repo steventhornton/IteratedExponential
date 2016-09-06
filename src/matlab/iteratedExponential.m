@@ -60,7 +60,6 @@ function iteratedExponential(workingDirIn, options)
     
     if nargin < 2
         options = struct();
-        disp('hi')
     end
     
     % Make working directory if it doesn't exit
