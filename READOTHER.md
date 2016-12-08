@@ -1,6 +1,6 @@
 ## Iterated Exponential Fractal
 
-The iteration <img src="https://rawgit.com/steventhornton/IteratedExponential/master/svgs/fe28dcd3c561e677c1867ff53257e2ac.svg" align=middle width=78.29226pt height=23.784120000000012pt/> where <img src="https://rawgit.com/steventhornton/IteratedExponential/master/svgs/8aaad2aa848320318ffb11a51bdfe36f.svg" align=middle width=50.2794pt height=23.026680000000013pt/> can either diverge or converge to a cycle. This repository provides Matlab code for plotting these cycle lengths in the complex plane. Different colors are used to represent the different cycle lengths. Black typically indicates the divergence, overflow or underflow in the iteration.
+The iteration $a_n = z^a_{n+1}$ where $a_0 = 1$ can either diverge or converge to a cycle. This repository provides Matlab code for plotting these cycle lengths in the complex plane. Different colors are used to represent the different cycle lengths. Black typically indicates the divergence, overflow or underflow in the iteration.
 
 This project originally aimed at reproducing the fractal that appears on a poster about the Lambert W function.
 This poster is available at [orcca.on.ca/LambertW/pic/bg/LambertW.jpg](http://www.orcca.on.ca/LambertW/pic/bg/LambertW.jpg) and more information about the Lambert W function can be found on [Wikipedia](https://en.wikipedia.org/wiki/Lambert_W_function) or in the [Corless, Gonnet, Hare, Jeffrey and Knuth paper](https://cs.uwaterloo.ca/research/tr/1993/03/W.pdf) from 1993.
@@ -22,7 +22,7 @@ When the function is called, it will create the working directory if it does not
 A `README.txt` file will be written containing information about the image produced.
 The images are named as `Image-k.png` where `k` is a positive integer to ensure images are never overwritten.
 
-A <img src="https://rawgit.com/steventhornton/IteratedExponential/master/svgs/454039f99217e7335e4c29f3567aa7f6.svg" align=middle width=46.48464pt height=23.026680000000013pt/> matrix of rgb colors can be provided to use as the colormap (see the `cmap` option). When this option is used, a point in the complex plane with cycle length `L` will use the `L mod m` color from the colormap.
+A $m \times 3$ matrix of rgb colors can be provided to use as the colormap (see the `cmap` option). When this option is used, a point in the complex plane with cycle length `L` will use the `L mod m` color from the colormap.
 
 ## Options
 
